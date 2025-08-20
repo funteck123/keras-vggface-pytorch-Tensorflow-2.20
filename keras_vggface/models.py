@@ -230,7 +230,7 @@ def RESNET50(include_top=True, weights='vggface',
     x = Conv2D(
         64, (7, 7), use_bias=False, strides=(2, 2), padding='same',
         name="conv1_7x7_s2")(img_input)
-    x = BatchNormalization(axis=bn_axis, name='conv1/7x7_s2/bn')(x)
+    x = BatchNormalization(axis=bn_axis, name='conv1_7x7_s2/bn')(x)
     x = Activation('relu')(x)
     x = MaxPooling2D((3, 3), strides=(2, 2))(x)
 
