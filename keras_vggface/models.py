@@ -17,7 +17,7 @@ from tensorflow.python.keras.utils import layer_utils
 from tensorflow.python.keras.utils.data_utils import get_file
 from keras import backend as K
 from keras_vggface import utils
-from keras.utils.layer_utils import get_source_inputs
+from tensorflow.python.keras.utils.layer_utils import get_source_inputs
 import warnings
 from keras.models import Model
 from keras import layers
